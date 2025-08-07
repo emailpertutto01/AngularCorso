@@ -1,8 +1,12 @@
+@if( isAddingTask ){ 
+    <app-new-task (closeDialogEventEmitter)="annullaAggiungiTask()"></app-new-task>
+}
+
 <section id="tasks">
     <header> 
         <h2 id="fallback">Task di {{name}}</h2>
         <menu>
-            <button>
+            <button (click)="aggiungiTask()">
                 Aggiungi Task
             </button>
         </menu>
