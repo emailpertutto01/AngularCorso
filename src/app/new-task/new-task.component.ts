@@ -9,6 +9,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NewTaskComponent {
   @Output() closeDialogEventEmitter = new EventEmitter<void>(); 
+  enteredTitle = ''; 
 
   closeDialog() { 
     this.closeDialogEventEmitter.emit(); 
